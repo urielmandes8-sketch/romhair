@@ -1,0 +1,647 @@
+# NUTRIGUM — Aparthy Style Shopify Landing Clone
+
+## Folder Structure
+
+```txt
+/nutrigum-landing
+│
+├── index.html
+├── style.css
+├── script.js
+│
+├── /assets
+│   ├── logo.png
+│   ├── hero-product.png
+│   ├── gummy-1.jpg
+│   ├── review-1.jpg
+│   ├── review-2.jpg
+│   ├── before-after.jpg
+│   └── trust-badge.png
+```
+
+---
+
+# index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NUTRIGUM - Creatine Gummies</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="top-bar">
+  FREE SHIPPING TODAY ONLY 🚚
+</div>
+
+<header class="navbar">
+  <img src="assets/logo.png" class="logo">
+  <a href="#offers" class="nav-btn">SHOP NOW</a>
+</header>
+
+<section class="hero">
+  <div class="hero-left">
+    <div class="rating">★★★★★ 4.9/5 Rated By 12,000+ Customers</div>
+
+    <h1>
+      Creatine Gummies That Actually Taste Good
+    </h1>
+
+    <p>
+      Improve strength, recovery and performance with delicious daily creatine gummies.
+    </p>
+
+    <div class="benefits">
+      <div>✔ 5g Daily Creatine</div>
+      <div>✔ No Powder Mess</div>
+      <div>✔ Better Recovery</div>
+      <div>✔ Vegan Formula</div>
+    </div>
+
+    <a href="#offers" class="hero-btn">GET YOUR GUMMIES</a>
+
+    <div class="trust-row">
+      <span>90 Day Guarantee</span>
+      <span>Lab Tested</span>
+      <span>Fast Shipping</span>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <img src="assets/hero-product.png" alt="Nutrigum Product">
+  </div>
+</section>
+
+<section class="brands">
+  <p>TRUSTED BY ATHLETES & FITNESS LOVERS</p>
+</section>
+
+<section class="offers" id="offers">
+  <h2>Choose Your Bundle</h2>
+
+  <div class="offer-grid">
+
+    <div class="offer-card">
+      <div class="badge">MOST POPULAR</div>
+      <h3>Buy 2 Get 1 Free</h3>
+      <img src="assets/gummy-1.jpg">
+      <div class="price">
+        <span class="old">$89.99</span>
+        <span class="new">$59.99</span>
+      </div>
+      <ul>
+        <li>✔ 3 Bottles Included</li>
+        <li>✔ Free Shipping</li>
+        <li>✔ 90 Day Guarantee</li>
+      </ul>
+      <button class="cart-btn">ADD TO CART</button>
+    </div>
+
+    <div class="offer-card secondary">
+      <h3>Starter Pack</h3>
+      <img src="assets/gummy-1.jpg">
+      <div class="price">
+        <span class="old">$39.99</span>
+        <span class="new">$29.99</span>
+      </div>
+      <ul>
+        <li>✔ 1 Bottle Included</li>
+        <li>✔ Fast Delivery</li>
+      </ul>
+      <button class="cart-btn">ADD TO CART</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="comparison">
+  <div class="comparison-left">
+    <h2>Why Everyone Is Switching To Gummies</h2>
+
+    <div class="compare-item">
+      <div>
+        <h4>NUTRIGUM</h4>
+        <p>Easy, tasty and effective.</p>
+      </div>
+      <div class="check">✔</div>
+    </div>
+
+    <div class="compare-item">
+      <div>
+        <h4>Traditional Powder</h4>
+        <p>Messy, chalky and inconvenient.</p>
+      </div>
+      <div class="cross">✖</div>
+    </div>
+  </div>
+
+  <div class="comparison-right">
+    <img src="assets/before-after.jpg">
+  </div>
+</section>
+
+<section class="reviews">
+  <h2>Real Customer Results</h2>
+
+  <div class="review-grid">
+
+    <div class="review-card">
+      <img src="assets/review-1.jpg">
+      <h4>“Way easier than powder.”</h4>
+      <p>
+        I actually look forward to taking creatine now.
+      </p>
+      <span>— Michael R.</span>
+    </div>
+
+    <div class="review-card">
+      <img src="assets/review-2.jpg">
+      <h4>“Huge improvement in recovery.”</h4>
+      <p>
+        My workouts feel much stronger and I recover faster.
+      </p>
+      <span>— Sarah K.</span>
+    </div>
+
+  </div>
+</section>
+
+<section class="faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <button class="faq-question">How many gummies should I take daily?</button>
+    <div class="faq-answer">
+      <p>4 gummies daily provide 5g of creatine.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Do they taste good?</button>
+    <div class="faq-answer">
+      <p>Yes, unlike traditional powder they taste like candy.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">How long does shipping take?</button>
+    <div class="faq-answer">
+      <p>Shipping typically takes 3-7 business days.</p>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <h2>Ready To Upgrade Your Supplement Routine?</h2>
+  <a href="#offers" class="hero-btn">SHOP NUTRIGUM</a>
+</section>
+
+<div class="sticky-cart">
+  <div>
+    <strong>NUTRIGUM Gummies</strong>
+    <span>Limited Stock Available</span>
+  </div>
+  <button>BUY NOW</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+```
+
+---
+
+# style.css
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  color: #111;
+}
+
+.top-bar {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 6%;
+  border-bottom: 1px solid #eee;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  width: 160px;
+}
+
+.nav-btn,
+.hero-btn,
+.cart-btn,
+.sticky-cart button {
+  background: #000;
+  color: white;
+  border: none;
+  padding: 16px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav-btn:hover,
+.hero-btn:hover,
+.cart-btn:hover,
+.sticky-cart button:hover {
+  opacity: 0.9;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  padding: 80px 6%;
+}
+
+.hero-left h1 {
+  font-size: 62px;
+  line-height: 1;
+  margin: 20px 0;
+  font-weight: 800;
+}
+
+.hero-left p {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.hero-right img {
+  width: 100%;
+}
+
+.rating {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 35px;
+}
+
+.benefits div {
+  background: #f5f5f5;
+  padding: 16px;
+  border-radius: 16px;
+  font-weight: 600;
+}
+
+.trust-row {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  color: #666;
+  font-size: 14px;
+}
+
+.brands {
+  text-align: center;
+  padding: 30px;
+  background: #f8f8f8;
+  font-weight: 700;
+}
+
+.offers {
+  padding: 100px 6%;
+}
+
+.offers h2,
+.reviews h2,
+.faq h2,
+.final-cta h2 {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.offer-card {
+  border: 2px solid #000;
+  border-radius: 30px;
+  padding: 40px;
+  position: relative;
+}
+
+.secondary {
+  border-color: #ddd;
+}
+
+.badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.offer-card img {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.price {
+  margin-bottom: 20px;
+}
+
+.old {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 10px;
+}
+
+.new {
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.offer-card ul {
+  list-style: none;
+  margin: 25px 0;
+}
+
+.offer-card li {
+  margin-bottom: 12px;
+}
+
+.comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 100px 6%;
+  align-items: center;
+}
+
+.comparison img {
+  width: 100%;
+  border-radius: 24px;
+}
+
+.compare-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.check,
+.cross {
+  font-size: 24px;
+}
+
+.reviews {
+  padding: 100px 6%;
+  background: #fafafa;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.review-card {
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.review-card img {
+  width: 100%;
+}
+
+.review-card h4,
+.review-card p,
+.review-card span {
+  padding: 0 25px;
+}
+
+.review-card h4 {
+  margin-top: 25px;
+}
+
+.review-card p {
+  margin: 16px 0;
+  color: #555;
+}
+
+.review-card span {
+  display: block;
+  padding-bottom: 30px;
+  font-weight: 700;
+}
+
+.faq {
+  padding: 100px 6%;
+}
+
+.faq-item {
+  border-bottom: 1px solid #eee;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 30px 0;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.faq-answer {
+  display: none;
+  padding-bottom: 30px;
+  color: #666;
+}
+
+.final-cta {
+  padding: 120px 6%;
+  text-align: center;
+  background: #000;
+  color: white;
+}
+
+.sticky-cart {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92%;
+  background: white;
+  border-radius: 20px;
+  padding: 18px 24px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+}
+
+.sticky-cart span {
+  display: block;
+  color: #777;
+  font-size: 13px;
+}
+
+@media(max-width: 900px) {
+
+  .hero,
+  .comparison,
+  .offer-grid,
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-left h1 {
+    font-size: 42px;
+  }
+
+  .offers h2,
+  .reviews h2,
+  .faq h2,
+  .final-cta h2 {
+    font-size: 36px;
+  }
+
+  .trust-row {
+    flex-wrap: wrap;
+  }
+
+  .sticky-cart {
+    width: calc(100% - 20px);
+    bottom: 10px;
+  }
+}
+```
+
+---
+
+# script.js
+
+```javascript
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+faqQuestions.forEach(question => {
+  question.addEventListener('click', () => {
+
+    const answer = question.nextElementSibling;
+
+    if(answer.style.display === 'block') {
+      answer.style.display = 'none';
+    } else {
+      answer.style.display = 'block';
+    }
+
+  });
+});
+
+window.addEventListener('scroll', () => {
+  const navbar = document.querySelector('.navbar');
+
+  if(window.scrollY > 20) {
+    navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.06)';
+  } else {
+    navbar.style.boxShadow = 'none';
+  }
+});
+```
+
+---
+
+# Shopify Integration Tips
+
+## Recommended Theme
+
+Use:
+
+* Dawn Theme
+* Shrine Theme
+* Impact Theme
+
+## How To Upload
+
+1. Go to Shopify Admin
+2. Online Store
+3. Themes
+4. Edit Code
+5. Upload assets
+6. Replace section HTML
+
+## Recommended Apps
+
+* Judge.me (reviews)
+* Klaviyo (email marketing)
+* Rebuy (upsells)
+* Bundler (bundle offers)
+
+## Things You Should Replace Immediately
+
+* Product images
+* Reviews
+* Logo
+* Colors
+* Product claims
+* Bundle prices
+* Before/after images
+
+## Recommended Conversion Additions
+
+* TikTok reviews section
+* UGC videos
+* Countdown timer
+* Exit intent popup
+* Subscription option
+* Sticky mobile ATC animation
+* Limited stock indicator
